@@ -1,0 +1,20 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+
+# Secrets — never commit
+backend/.env
+
+# Raw data (large CSVs — download separately)
+data/raw/
+
+# Docs (excluded)
+docs/
+
+# CSV outputs — keep only the two test_inputs files
+*.csv
+!test_inputs/
+!test_inputs/*.csv
+
+# The frontend is a separate repository (coworker's UI)
+finsight-ui/

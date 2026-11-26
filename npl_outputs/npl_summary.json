@@ -1,0 +1,31 @@
+{
+  "report": "NPL compliance report",
+  "total_loans": 20000,
+  "npl_count": 3685,
+  "npl_ratio_pct": 18.43,
+  "total_exposure": 300974000.0,
+  "npl_exposure": 58336600.0,
+  "by_severity": [
+    {
+      "severity": "loss",
+      "count": 3571,
+      "exposure": 56164800.0
+    },
+    {
+      "severity": "performing",
+      "count": 16315,
+      "exposure": 242637400.0
+    },
+    {
+      "severity": "substandard",
+      "count": 106,
+      "exposure": 1996750.0
+    },
+    {
+      "severity": "watch",
+      "count": 8,
+      "exposure": 175050.0
+    }
+  ],
+  "flagged_loans_file": "npl_flagged_loans.csv"
+}

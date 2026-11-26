@@ -174,7 +174,7 @@ CREATE TABLE bureau_record (
     borrower_id           bigint        NOT NULL REFERENCES borrower (borrower_id),
     credit_status_id      smallint      REFERENCES ref_credit_status (credit_status_id),
     contract_type_id      smallint      REFERENCES ref_contract_type (contract_type_id),
-    credit_currency       varchar(3),
+    credit_currency       varchar(20),
     days_credit           integer,
     days_credit_enddate   integer,
     credit_day_overdue    integer,
@@ -236,7 +236,7 @@ CREATE TABLE pos_cash_balance (
     months_balance         integer       NOT NULL,
     cnt_installment        integer,
     cnt_installment_future integer,
-    contract_status        varchar(20),
+    contract_status        varchar(30),
     sk_dpd                 integer,
     sk_dpd_def             integer
 );

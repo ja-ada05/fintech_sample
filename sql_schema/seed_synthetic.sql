@@ -2,7 +2,7 @@
 -- Synthetic smoke-test seed for credit_risk_schema.sql
 -- Small, clearly-synthetic rows so the schema can be exercised immediately
 -- without downloading the (large) real source files. For real data, run
--- etl_scripts/ingest_credit_risk.py (see docs/data_provenance.md).
+-- etl_scripts/load_sample_data.py (see docs/data_provenance.md).
 --
 -- Run AFTER credit_risk_schema.sql in the same session:
 --   psql -v ON_ERROR_STOP=1 -d <your_db> -f credit_risk_schema.sql -f seed_synthetic.sql

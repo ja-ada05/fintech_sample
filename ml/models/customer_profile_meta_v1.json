@@ -1,0 +1,147 @@
+{
+  "model": "customer_profile_rf",
+  "version": 1,
+  "created_at": "2026-11-20T14:35:51.805003+00:00",
+  "n_samples": 543,
+  "features": [
+    "credit_limit_max",
+    "credit_limit_mean",
+    "balance_mean",
+    "balance_max",
+    "utilization_mean",
+    "spend_total",
+    "spend_pos_total",
+    "spend_other_total",
+    "cash_advance_total",
+    "cash_advance_mean",
+    "n_drawings_total",
+    "n_atm_drawings_total",
+    "n_pos_drawings_total",
+    "payment_mean",
+    "install_regularity_mean",
+    "dpd_max",
+    "ever_delinquent",
+    "n_months"
+  ],
+  "best_params": {
+    "n_estimators": 200,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "max_depth": 10,
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "accuracy": 0.963302752293578,
+    "macro_f1": 0.909914251118195,
+    "confusion_matrix": [
+      [
+        26,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        46,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.896551724137931,
+        "recall": 0.9629629629629629,
+        "f1-score": 0.9285714285714286,
+        "support": 27.0
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 0.9583333333333334,
+        "f1-score": 0.9787234042553191,
+        "support": 48.0
+      },
+      "2": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "3": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1-score": 0.6666666666666666,
+        "support": 2.0
+      },
+      "4": {
+        "precision": 0.9523809523809523,
+        "recall": 1.0,
+        "f1-score": 0.975609756097561,
+        "support": 20.0
+      },
+      "accuracy": 0.963302752293578,
+      "macro avg": {
+        "precision": 0.9697865353037767,
+        "recall": 0.8842592592592592,
+        "f1-score": 0.909914251118195,
+        "support": 109.0
+      },
+      "weighted avg": {
+        "precision": 0.9656377577921393,
+        "recall": 0.963302752293578,
+        "f1-score": 0.9623456920272334,
+        "support": 109.0
+      }
+    }
+  },
+  "feature_importances": {
+    "n_pos_drawings_total": 0.11497138003286632,
+    "balance_max": 0.11386181597577676,
+    "n_drawings_total": 0.10279378873980838,
+    "balance_mean": 0.09326377011714648,
+    "n_months": 0.09219396711609364,
+    "install_regularity_mean": 0.0770436615675261,
+    "spend_total": 0.06730750532631792,
+    "utilization_mean": 0.054817316948211806,
+    "dpd_max": 0.05219262423514043,
+    "ever_delinquent": 0.04424109566498273,
+    "payment_mean": 0.03832262364844939,
+    "credit_limit_mean": 0.035379627648388076,
+    "cash_advance_total": 0.02702285978855597,
+    "spend_pos_total": 0.026751898841165668,
+    "cash_advance_mean": 0.02472150122590788,
+    "n_atm_drawings_total": 0.016858087730538696,
+    "credit_limit_max": 0.016172176177557753,
+    "spend_other_total": 0.002084299215565863
+  },
+  "classes": {
+    "0": "Cluster 0",
+    "1": "Cluster 1",
+    "2": "Cluster 2",
+    "3": "Cluster 3",
+    "4": "Cluster 4"
+  },
+  "random_state": 42
+}

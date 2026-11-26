@@ -1,0 +1,29 @@
+# ============================================================================
+# Python dependencies — Credit Risk, Fraud & Loan-Portfolio BI platform
+#
+# Verified on Python 3.15 (all pins work on Python 3.10+).
+#
+# Databases:
+#   MySQL 8.0.19+        -> main platform (db.py, load_sample_data.py, export_views.py)
+#   PostgreSQL 14+       -> openNPL compliance module only (npl_export.py, npl_report.py)
+#
+# Frontend (Next.js) is a separate npm project with its own package.json,
+# not covered by this file.
+# ============================================================================
+
+# --- Data manipulation ---
+pandas==3.0.6
+numpy==2.5.4
+
+# --- Database drivers ---
+pymysql==1.1.1            # MySQL — main platform
+psycopg2-binary==2.9.13   # PostgreSQL — openNPL module only
+
+# --- Machine learning ---
+scikit-learn==1.9.1       # RF / LogisticRegression / KMeans / StandardScaler + metrics + CV
+joblib==1.6.0             # model persistence (ml/models/*.joblib)
+
+# --- Optional: Excel tooling ---
+# The shipped model_input_templates.xlsx was generated with the stdlib (no dependency).
+# Uncomment only if you want to regenerate/edit it with openpyxl:
+# openpyxl==3.1.5

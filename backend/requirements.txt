@@ -1,0 +1,8 @@
+# Backend (FastAPI) dependencies — install with:
+#   pip install -r backend/requirements.txt
+# The ML deps (pandas/numpy/scikit-learn/joblib) are in the repo-root requirements.txt.
+
+fastapi==0.121.3
+uvicorn[standard]==0.41.0
+pymysql==1.1.1
+python-multipart==0.0.20
